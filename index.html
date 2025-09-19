@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yahui Qu · Personal Website</title>
+  <meta name="description" content="I’m a math graduate student from the University of Wisconsin–Madison. I’m fortunate to be advised by Benedek Valkó and Hao Shen." />
+  <link rel="canonical" href="https://your-username.github.io/" />
+  <meta property="og:title" content="Yahui Qu · Personal Website" />
+  <meta property="og:description" content="I’m a math graduate student from the University of Wisconsin–Madison. I’m fortunate to be advised by Benedek Valkó and Hao Shen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/" />
+  <meta property="og:image" content="https://your-username.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root { --bg:#0b0c10; --card:#111217; --muted:#a1a1aa; --text:#e5e7eb; --brand:#7c3aed; --brand-2:#06b6d4; --ring:rgba(124,58,237,.35) }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f7f7fb; --card:#ffffff; --muted:#6b7280; --text:#111827; --brand:#6d28d9; --brand-2:#0891b2; --ring:rgba(109,40,217,.25) }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:radial-gradient(1200px 600px at 10% -10%,rgba(124,58,237,.09),transparent 60%),radial-gradient(1200px 600px at 110% 10%,rgba(6,182,212,.09),transparent 60%),var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(1100px,92%);margin:0 auto}
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid color-mix(in srgb,var(--muted) 20%,transparent);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(45deg,var(--brand),var(--brand-2));box-shadow:0 0 18px var(--ring)}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a{color:var(--text);opacity:.9}
+    nav a.active{color:var(--brand)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:64px 0}
+    .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px}
+    .hero p.lead{font-size:clamp(16px,2.6vw,20px);color:var(--muted);margin:0 0 24px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;border:0;box-shadow:0 6px 18px var(--ring)}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid color-mix(in srgb,var(--muted) 30%,transparent)}
+    .hero-card{background:linear-gradient(180deg,color-mix(in srgb,var(--card) 80%,transparent),var(--card));border:1px solid color-mix(in srgb,var(--muted) 18%,transparent);border-radius:20px;padding:22px;box-shadow:0 10px 30px color-mix(in srgb,var(--ring) 20%,transparent)}
+    .hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .stat{border-radius:14px;padding:16px;background:color-mix(in srgb,var(--card) 85%,transparent);border:1px solid color-mix(in srgb,var(--muted) 16%,transparent)}
+    .stat .kpi{font-weight:700;font-size:22px}
+    .muted{color:var(--muted)}
+    section{padding:48px 0}
+    h2{font-size:26px;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid color-mix(in srgb,var(--muted) 16%,transparent);border-radius:16px;padding:18px;transition:transform .15s ease,box-shadow .15s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 12px 28px color-mix(in srgb,var(--ring) 25%,transparent)}
+    .card .tag{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid color-mix(in srgb,var(--muted) 20%,transparent);margin-bottom:8px}
+    .card h3{margin:8px 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    .card .links{display:flex;gap:12px;margin-top:10px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:640px){nav ul{display:none}.grid{grid-template-columns:1fr}}
+    #menuToggle{display:none}
+    @media (max-width:640px){#menuToggle{display:inline-flex;align-items:center;gap:8px;border:1px solid color-mix(in srgb,var(--muted) 25%,transparent);border-radius:999px;padding:8px 12px}#menuPanel{display:none;position:absolute;right:4%;top:52px;background:var(--card);border:1px solid color-mix(in srgb,var(--muted) 20%,transparent);border-radius:12px;padding:10px}#menuPanel a{display:block;padding:8px 10px}}
+    footer{padding:32px 0 48px;color:var(--muted);font-size:14px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yahui Qu",
+    "url": "https://your-username.github.io/",
+    "jobTitle": "Mathematics Graduate Student",
+    "affiliation": {"@type":"CollegeOrUniversity","name":"University of Wisconsin–Madison"},
+    "mentor": [{"@type":"Person","name":"Benedek Valkó"},{"@type":"Person","name":"Hao Shen"}]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> <span>Yahui Qu</span></div>
+      <button id="menuToggle">Menu ▾</button>
+      <nav>
+        <ul>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuPanel" class="container">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#papers">Papers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <h1>Hello, I’m <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Yahui Qu</span>.</h1>
+        <p class="lead">I’m a math graduate student from the University of Wisconsin–Madison. I’m fortunate to be advised by Benedek Valkó and Hao Shen.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#research">Research</a>
+          <a class="btn secondary" href="#papers">Papers</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-grid">
+          <div class="stat"><div class="kpi">Probability</div><div class="muted">Main field</div></div>
+          <div class="stat"><div class="kpi">RMT</div><div class="muted">Random Matrix Theory</div></div>
+          <div class="stat"><div class="kpi">SPDE</div><div class="muted">Stochastic PDE</div></div>
+          <div class="stat"><div class="kpi">UW–Madison</div><div class="muted">Advisors: Valkó · Shen</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m a math graduate student from the University of Wisconsin–Madison. I’m fortunate to be advised by Benedek Valkó and Hao Shen.</p>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2>Research Interest</h2>
+      <p>I’m interested in Probability, and I work on two directions:</p>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Probability</span>
+          <h3>Random Matrix Theory</h3>
+          <p>Local statistics and universality; connections with the Sine β process and eigenvalue interactions.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Probability</span>
+          <h3>Stochastic Partial Differential Equation</h3>
+          <p>Regularity, scaling limits, and probabilistic structure of SPDEs.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Papers -->
+    <section id="papers">
+      <h2>Papers</h2>
+      <div class="card">
+        <h3>Random Matrix Theory</h3>
+        <ul>
+          <li>Pair correlation function of Sine β process</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h3>SPDE</h3>
+        <p>Yet to come.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For correspondence, please email <a href="mailto:you@example.com">you@example.com</a>. (Replace with your address.)</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Yahui Qu · Built with GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle=document.getElementById('menuToggle');
+    const panel=document.getElementById('menuPanel');
+    toggle?.addEventListener('click',()=>{panel.style.display=panel.style.display==='block'?'none':'block'});
+    document.addEventListener('click',(e)=>{if(panel && !panel.contains(e.target) && e.target!==toggle){panel.style.display='none'}});
+    const links=[...document.querySelectorAll('header nav a[href^="#"]')];
+    const sections=links.map(a=>document.querySelector(a.getAttribute('href')));
+    const onScroll=()=>{const y=window.scrollY+90;sections.forEach((sec,i)=>{if(!sec)return;const top=sec.offsetTop,bottom=top+sec.offsetHeight;links[i].classList.toggle('active',y>=top && y<bottom);});};
+    document.addEventListener('scroll',onScroll,{passive:true});
+    onScroll();
+  </script>
+</body>
+</html>

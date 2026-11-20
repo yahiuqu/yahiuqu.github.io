@@ -16,12 +16,12 @@
 
     
     header { border-bottom: 2px solid #eee; padding: 24px 0; }
-    .top { display: grid; grid-template-columns: 1fr 240px; gap: 24px; align-items: center; }
+    .top { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; align-items: center; }
 
     h1 { font-size: 28px; margin: 0 0 6px; color: var(--purple); }
     .tagline { margin: 6px 0 0; color: #444; }
 
-    .photo { width: 320px; height: 320px; background: #faf5ff; border: 2px dashed var(--purple); border-radius: 8px; display:flex; align-items:center; justify-content:center; color:#6b21a8; font-size: 14px; }
+    .photo { width: 240px; height: 240px; max-width: 100%; background: #faf5ff; border: 2px dashed var(--purple); border-radius: 8px; display:flex; align-items:center; justify-content:center; color:#6b21a8; font-size: 14px; }
     .photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
 
     section { padding: 12px 0; }
@@ -39,18 +39,19 @@
 
 
 <meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://yahiuqu.github.io/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Yahui Qu" />
 <meta property="og:title" content="Yahui Qu — Mathematics Ph.D. student" />
 <meta property="og:description" content="Probability, Random Matrix Theory, and Stochastic PDEs." />
-<meta property="og:url" content="https://<your-domain>/" />
-<meta property="og:image" content="https://<your-domain>/photo.jpg" />
+<meta property="og:url" content="https://yahiuqu.github.io/" />
+<meta property="og:image" content="https://yahiuqu.github.io/photo.jpg" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Yahui Qu — Mathematics Ph.D. student" />
 <meta name="twitter:description" content="Probability, Random Matrix Theory, and Stochastic PDEs." />
-<meta name="twitter:image" content="https://<your-domain>/photo.jpg" />
+<meta name="twitter:image" content="https://yahiuqu.github.io/photo.jpg" />
 
   
 </head>
@@ -91,13 +92,29 @@
         <p>I’m interested in <strong>Probability</strong>, especially</p>
         <ul>
           <li><strong>Random Matrix Theory</strong>: I work on problems about beta ensembles using the random operator approach.</li>
-          <li><strong>Stochastic Partial Differential Equation</strong>: I apply regularity structures to nonlinear SPDEs related to quantum field theory problems.</li>
+          <li><strong>Stochastic Partial Differential Equations</strong>: I apply regularity structures to nonlinear SPDEs related to quantum field theory problems.</li>
         </ul>
       </section>
 
  <section>
   <h2>Publications/Preprints</h2>
   <ul>
+    <li>
+      <a href="https://arxiv.org/abs/2611.26344"
+         target="_blank"
+         rel="noopener noreferrer">
+        Analyticity of Sine<sub>&beta;</sub> pair correlations
+      </a>
+      (with Yun Li,
+      <a href="https://people.math.wisc.edu/~valko/"
+         target="_blank"
+         rel="noopener noreferrer">Benedek Valkó</a>,
+      and Bálint Virág),
+      2026.
+      <br>
+      <em>Preprint.</em>
+    </li>
+
     <li>
       <a href="https://arxiv.org/abs/2608.27828"
          target="_blank"
@@ -155,7 +172,7 @@
   <h2>Awards</h2>
   <ul>
     <li>
-      <strong>Excellence in Math Research Award</strong>, UW–Madison, 2026.
+      <strong>Excellence in Mathematical Research Award</strong>, UW–Madison, 2026.
     </li>
     <li>
       <strong>Bung-Fung Lee Torng Award</strong>, UW–Madison, Summer 2025.
@@ -226,6 +243,10 @@
 <section>
   <h2>Talks</h2>
   <ul>
+    <li>
+      <strong>Probability Seminar</strong>,
+      Purdue University, January 2027 (upcoming).
+    </li>
             <li>
       <strong> Probability Seminar</strong>,
       University of Wisconsin–Madison, November 2026.
@@ -263,11 +284,6 @@
     </li>
 
     <li>
-      <strong>Probability Seminar</strong>,
-      University of Wisconsin–Madison, February 2026.
-    </li>
-
-    <li>
       <strong>
         <a href="https://sites.google.com/view/vapseminar"
            target="_blank"
@@ -279,8 +295,13 @@
     </li>
 
     <li>
+      <strong>Probability Seminar</strong>,
+      University of Wisconsin–Madison, February 2026.
+    </li>
+
+    <li>
       <strong>Northeast Probability Seminar (NEPS)</strong>,
-      2025 (Short talk).
+      November 2025 (Short talk).
     </li>
 
     <li>
@@ -290,6 +311,7 @@
     </li>
   </ul>
 </section>
-
-
-           
+    </main>
+  </div>
+</body>
+</html>
